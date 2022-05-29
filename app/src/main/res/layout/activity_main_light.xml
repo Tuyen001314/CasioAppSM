@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="5"
+        android:columnCount="4"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9">
+
+        <Button
+            android:id="@+id/buttonAC"
+            style="@style/button_casio_light"
+            android:text="@string/ac"
+            android:textColor="#4FA398" />
+
+        <Button
+            android:id="@+id/buttonOpen"
+            style="@style/button_casio_light"
+            android:text="@string/button_open"
+            android:textColor="#F3AD46" />
+
+
+        <Button
+            android:id="@+id/buttonClose"
+            style="@style/button_casio_light"
+            android:text="@string/key_close"
+
+            android:textColor="#F3AD46" />
+
+        <Button
+            android:id="@+id/buttonx"
+            style="@style/button_casio_light"
+            android:text="@string/keyX"
+            android:textColor="#985F62" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/button_casio_light"
+            android:text="@string/key7" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/button_casio_light"
+            android:text="@string/key8" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/button_casio_light"
+            android:text="@string/key9" />
+
+        <Button
+            android:id="@+id/buttondiv"
+            style="@style/button_casio_light"
+            android:text="@string/btn_div"
+            android:textColor="#985F62" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/button_casio_light"
+            android:text="@string/key4" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/button_casio_light"
+            android:text="@string/key5" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/button_casio_light"
+            android:text="@string/key6" />
+
+        <ImageButton
+            android:id="@+id/buttonplus"
+            style="@style/button_casio_light"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/pluss"
+            android:textColor="#985F62" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/button_casio_light"
+            android:text="@string/key1" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/button_casio_light"
+            android:text="@string/key2" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/button_casio_light"
+            android:text="@string/key3" />
+
+
+        <ImageButton
+            android:id="@+id/buttonsub"
+            style="@style/button_casio_light"
+            android:src="@drawable/resource__"
+            android:textColor="#985F62"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonzero"
+            style="@style/button_casio_light"
+            android:text="@string/key0" />
+
+        <Button
+            android:id="@+id/buttondot"
+            style="@style/button_casio_light"
+            android:text="." />
+
+        <Button
+            android:id="@+id/buttonDel"
+            style="@style/button_casio_light"
+            android:text="@string/key_delete"
+            android:textColor="#B943E4" />
+
+        <Button
+            android:id="@+id/buttonequal"
+            style="@style/button_casio_light"
+            android:text="="
+            android:textColor="#985F62"
+            android:textSize="30sp" />
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/group_46"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageView2"
+        style="@style/button_casio"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/div_bo"
+        android:onClick="onClickButtonDark"
+        android:src="@drawable/vector__6_"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/textEnter"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edt_light"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="15"
+        android:gravity="right|center"
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/keyboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:gravity="right"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/keyboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
